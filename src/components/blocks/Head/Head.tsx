@@ -5,6 +5,7 @@ import Modal from 'components/Modal/Modal';
 import Form from 'components/Forms/Form';
 import { useAppDispatch } from "store/hooks";
 import { addPostThunk } from "store/articlesSlice";
+import { Article } from 'types/types';
 
 type HeadProps = {
   title: string;
@@ -21,7 +22,7 @@ const Head = ({ title, subtitle, addPost }: HeadProps): JSX.Element => {
   };
 
   const onSubmit = (formData: FormData) => {
-    dispatch(addPostThunk(Object.fromEntries(formData)));
+    dispatch(addPostThunk({...Object.fromEntries(formData), id: new Date().getTime()} as Article));
   };
 
   return (

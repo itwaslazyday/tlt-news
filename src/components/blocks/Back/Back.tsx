@@ -13,6 +13,7 @@ const Back = ({ children }: BackProps ): JSX.Element => {
   return (
     <section className='back container'>
       <Link className='back__link' to={AppRoute.Main}><ArrowIcon /> Back</Link>
+      {children}
     </section>
   )
 }

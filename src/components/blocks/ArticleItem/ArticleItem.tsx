@@ -35,7 +35,7 @@ const ArticleItem = ({ id, title, body }: Article): JSX.Element => {
   };
 
   const onSubmit = (formData: FormData) => {
-    dispatch(patchPostThunk({...Object.fromEntries(formData), id}));
+    dispatch(patchPostThunk({...Object.fromEntries(formData), id} as Article));
     setIsModalOpen(prev => !prev);
   };
 
