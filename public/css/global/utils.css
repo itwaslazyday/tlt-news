@@ -1,0 +1,18 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1050px;
+  padding: 0 var(--mobile-offset);
+
+  @media screen and (min-width: 768px) {
+    padding: 0 var(--desktop-offset);
+  }
+}

@@ -1,0 +1,40 @@
+.head {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  
+  font-family: 'Montserrat';
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+}
+
+.head__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.head__title {
+  font-weight: 700;
+  font-size: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.head__subtitle {
+  font-size: 14px;
+
+  color: var(--color-text-main);
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}

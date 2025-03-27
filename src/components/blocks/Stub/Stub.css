@@ -1,0 +1,17 @@
+.stub {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+
+  padding: 50px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+}

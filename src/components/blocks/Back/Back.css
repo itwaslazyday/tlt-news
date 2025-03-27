@@ -1,0 +1,30 @@
+.back {
+  margin-top: auto;
+  padding-bottom: 40px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.back__link {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  transition: var(--transition);
+  width: fit-content;
+  border-radius: 1px;
+
+  svg {
+    transition: var(--transition);
+  }
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateX(-5px);
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-grey);
+    outline-offset: 6px;
+  }
+}

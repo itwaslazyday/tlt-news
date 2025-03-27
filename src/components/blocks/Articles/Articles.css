@@ -1,0 +1,15 @@
+.articles {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+}
+
+.articles__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
